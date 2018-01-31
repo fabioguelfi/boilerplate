@@ -8,7 +8,6 @@ export default props => (
     <Router history={hashHistory}>
         <Route path='/todos' component={Todo} />
         <Route path='/about' component={About} />
-        <Route path='*' component={Todo} />
+        <Redirect from='*' to='/todos' />
     </Router>
 )
-
